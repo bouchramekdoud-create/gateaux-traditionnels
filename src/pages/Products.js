@@ -8,8 +8,14 @@ import Sablechocof from "../Sablechocofor.jpg";
 import maqrot from "../maqrot.jpg";
 import cakeFor from "../cakes fourrees.jpg";
 import wardat from "../wetdat.jpg";
+ 
 
-export function Products({ setCart }) {
+
+ 
+export function Products() {
+ 
+    
+  
   return (
     <div>
       <Header style={{ margin: "0", boxShdow: "10px 10px 10px gray" }}></Header>
@@ -32,116 +38,104 @@ export function Products({ setCart }) {
 
         <div className="products-grid">
           <PetitDiv
-            setCart={setCart}
-            names="Sablé "
+            
+            names=" 1.Sablé "
             text={
               <>
-                Sable : قطعة شهية مغطاة بالشوكولا، مزينة بتفاصيل ذهبية أنيقة،
-                مثالية للمناسبات والضيافة الراقية. <br></br>Une gourmandise
+              Une gourmandise
                 généreusement nappée de chocolat et délicatement décorée de
                 détails dorés, parfaite pour les occasions et les réceptions
-                élégantes.
-              </>
+                élégantes           </>
+               
+           
             }
+
+          
             image={sableChoco}
-          />
+          > {(<p onClick={ newComp()}>Version Arab</p>)}  </PetitDiv>
 
           <PetitDiv
-            setCart={setCart}
-            names="Sablé "
+            
+            names="2.Sablé "
             text={
-              <>
-                Sablé :حلوى جزائرية راقية بطابع تقليدي، محضرة بعناية ومزينة
-                بالشوكولا واللمسات الذهبية، لتمنحكم مذاقًا أصيلًا وأنيقًا.
-                <br></br>
-                Une pâtisserie algérienne raffinée au caractère traditionnel,
+              <> Une pâtisserie algérienne raffinée au caractère traditionnel,
                 préparée avec soin et sublimée par du chocolat et des touches
-                dorées, pour une saveur authentique et élégante.{" "}
+                dorées, pour une saveur authentique et élégante.
+                
+               {" "}
               </>
             }
             image={Aid}
           />
 
           <PetitDiv
-            setCart={setCart}
-            names="Fourré"
+            
+            names="3.Fourré"
             text={
-              <>
-                Fourré:حلوى فاخرة بطبقة شوكولا ناعمة، محشية بالشوكولا أو بالحشوة
-                التي يختارها الزبون، ومزينة بلمسات ذهبية أنيقة.
-                <br></br>
-                Une pâtisserie raffinée recouverte d’une délicate couche de
+              <>Une pâtisserie raffinée recouverte d’une délicate couche de
                 chocolat, fourrée au chocolat ou selon le choix du client, et
-                sublimée par de jolies touches dorées.{" "}
+                sublimée par de jolies touches dorées.
+                
+                {" "}
               </>
             }
             image={sable}
           />
 
           <PetitDiv
-            setCart={setCart}
-            names="Kaàk"
+            
+            names="4.Kaàk"
             text={
               <>
-                {" "}
-                Kaàk: قطعة ناعمة وأنيقة بتصميم أبيض فاخر، مزينة بالزهور
-                والتفاصيل الذهبية، مثالية للأعراس والمناسبات الخاصة.
-                <br></br>
                 Une délicate pâtisserie au design blanc et raffiné, décorée de
                 fleurs et de détails dorés, idéale pour les mariages et les
-                occasions spéciales{" "}
+                occasions spéciales
+                  {" "}
               </>
             }
             image={white}
           />
 
           <PetitDiv
-            names="Braslet"
+            names="5.Braslet"
             text={
               <>
-                Braslet :حلوة هشة ولذيذة، محشوة بحشوة غنية تمنحها مذاقًا شهيًا
-                ومميزًا، مثالية مع القهوة والشاي. 🤍
-                <br></br> Une délicieuse pâtisserie légère et croustillante,
+             Une délicieuse pâtisserie légère et croustillante,
                 généreusement fourrée pour un goût gourmand et raffiné, parfaite
-                avec un café ou un thé. 🤍{" "}
-              </>
+                avec un café ou un thé. 🤍
+                   </>
             }
             image={Braslet}
           />
 
           <PetitDiv
-            names="Sablé"
+            names="6.Sablé"
             text={
-              <>
-                Sablé : صابلي هش ولذيذ، مغطى بالشكولاطة ليمنحه مذاقًا
-                غنيًاوشهيًا، مثالي لمحبي الشكولاطة. 🍫
-                <br></br>Un délicieux sablé fondant, nappé de chocolat pour une
+              <>Un délicieux sablé fondant, nappé de chocolat pour une
                 saveur riche et gourmande, parfait pour les amateurs de
-                chocolat. 🍫{" "}
-              </>
+                chocolat. 🍫
+                   </>
             }
             image={Sablechocof}
           />
 
           <PetitDiv
+          names="7.Maqrot"
             text={
               <>
-                Maqrot: مقروط السنيوة التقليدي، بطبقات هشة وحشوة لذيذة، محضر
-                بعناية ليقدم مذاقًا أصيلًا وشهيًا. 🤎
-                <br></br>Un délicieux makrout traditionnel préparé en sniwa,
+                Un délicieux makrout traditionnel préparé en sniwa,
                 avec une texture fondante et une savoureuse garniture, pour un
                 goût authentique et gourmand. 🤎
-              </>
+                        </>
             }
             image={maqrot}
           />
 
           <PetitDiv
+          names="8.Cakes"
             text={
               <>
-                Cakes: كيكة طرية ولذيذة، محشوة حسب اختيار وطلب الزبون، لتناسب كل
-                الأذواق والمناسبات. 🎂🤍
-                <br></br>Un délicieux cake moelleux, fourré selon le choix et la
+                 Un délicieux cake moelleux, fourré selon le choix et la
                 demande du client, pour satisfaire toutes les envies. 🎂🤍
               </>
             }
@@ -149,13 +143,12 @@ export function Products({ setCart }) {
           />
 
           <PetitDiv
+          names="9.wardat"
             text={
-              <>
-                Rose: حلوة الوردة بتصميم أنيق ومذاق شهي، محضّرة بعناية لتضيف
-                لمسة جميلة ومميزة لمناسباتكم. 🌹🤍
-                <br></br>Une délicieuse pâtisserie en forme de rose, élégante et
+              <>Une délicieuse pâtisserie en forme de rose, élégante et
                 savoureuse, préparée avec soin pour sublimer vos occasions. 🌹🤍
-              </>
+              
+                 </>
             }
             image={wardat}
           />
@@ -165,7 +158,8 @@ export function Products({ setCart }) {
   );
 }
 
-function PetitDiv({ image, text, names, setCart }) {
+function PetitDiv({ image, text, names, setCart ,arab,children}) {
+  
   return (
     <div className="product-card">
       <div>
@@ -175,6 +169,8 @@ function PetitDiv({ image, text, names, setCart }) {
       <div>
         <p>{names}</p>
         <p>{text}</p>
+        
+       
       </div>
 
       {/* <button onClick={() => setCart(prev => [...prev, names])} className="AcheterBtn" style={{borderRadius:"20px",
@@ -185,4 +181,13 @@ function PetitDiv({ image, text, names, setCart }) {
                 }}><p>Acheter</p></button> */}
     </div>
   );
+  
+}
+function newComp(arab){
+  
+  return(
+   
+      <p>{arab}</p>
+    
+  )
 }

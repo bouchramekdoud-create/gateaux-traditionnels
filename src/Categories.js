@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export function Categories() {
   return (
-    <div
+    <div className="categories'container"
       style={{
         display: "flex",
         justifyContent: "center",
@@ -29,7 +29,7 @@ export function Categories() {
 export default function PetitDiv({ image, text }) {
   return (
     <div
-      className="div"
+      className="category-card"
       style={{
         width: "200px",
         height: "100px",
